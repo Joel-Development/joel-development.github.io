@@ -1,0 +1,26 @@
+{
+  "name": "sanchezdev-1906.github.io",
+  "version": "1.0.0",
+  "description": "archivos de desarrollo de mi pagina web personal, Sanchez Dev",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug --watch dev/index.pug -o docs/",
+    "sass": "sass --watch dev/sass/style.scss docs/style.css",
+    "minify": "minify docs/style.css > docs/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanchez-dev1906/sanchez-dev1906.github.io.git"
+  },
+  "keywords": [],
+  "author": "Joel Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanchez-dev1906/sanchez-dev1906.github.io/issues"
+  },
+  "homepage": "https://github.com/sanchez-dev1906/sanchez-dev1906.github.io#readme"
+}

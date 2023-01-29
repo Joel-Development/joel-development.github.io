@@ -1,0 +1,31 @@
+.contact 
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  address
+  {
+    .link
+    {
+      display: block;
+      text-decoration: none;
+      padding-bottom: 0.5rem;
+      color: $color-light--100;
+    }
+    .link:last-child
+    {
+      padding-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 700px){
+  .contact 
+  {
+    .link
+    {
+      &:hover
+      {
+        color: $color-primary;
+      }
+    }
+  }
+}

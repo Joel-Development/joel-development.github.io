@@ -1,5 +1,6 @@
 .projects
 {
+  position: relative;
   padding-top: 1rem;
   padding-bottom: 1rem;
   .cards-container
@@ -7,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 240px);
     grid-auto-rows: 200px;
+    justify-content: center;
     gap: 1rem;
   }
   .card

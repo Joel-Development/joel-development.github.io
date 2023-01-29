@@ -4,6 +4,9 @@
   padding-bottom: 1rem;
   address
   {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     .link
     {
       display: block;
@@ -25,6 +28,8 @@
       &:hover
       {
         color: $color-primary;
+        -webkit-text-shadow: $color-dark-transparent;
+        text-shadow: 0 0 5px $color-dark-transparent;
       }
     }
   }

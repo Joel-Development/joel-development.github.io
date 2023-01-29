@@ -5,9 +5,11 @@
 }
 .skills-container
 {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 125px);
-  grid-template-rows: 125px;
+  justify-content: center;
+  grid-auto-rows: 125px;
   gap: 1rem;
 }
 .skill

@@ -53,6 +53,11 @@
   {
     text-decoration: none;
     color: $color-light--100;
+    transition: .2s color;
+  }
+  & ul li a:hover
+  {
+    color: $color-primary;
   }
   & .buttons
   {

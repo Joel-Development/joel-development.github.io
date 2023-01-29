@@ -613,6 +613,18 @@ h1, h2, h3, h4 {
     color: #EC1C58;
   }
 }
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #2B2B2B;
+}
+.footer__text {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 80ch;
+  text-align: center;
+}
+
 .button {
   display: flex;
   justify-content: center;

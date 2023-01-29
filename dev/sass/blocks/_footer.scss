@@ -1,0 +1,14 @@
+.footer
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background-color: $color-dark--90;
+  &__text
+  {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 80ch;
+    text-align: center;
+  }
+}

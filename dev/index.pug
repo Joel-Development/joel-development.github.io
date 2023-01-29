@@ -9,6 +9,7 @@ html(lang="en")
     script(src="https://kit.fontawesome.com/e8f815e43c.js" crossorigin="anonymous")
     title Sanchez Dev - Frontend Developer
   body
+    img(src="./assets/img/shape-1.svg", alt="shape").shape-1
     header.menu
       a(href="https://sanchezdev-1906.github.io") 
         img(src="./assets/logo/logo-big.svg", alt="sanchez dev logo").menu__logo
@@ -29,5 +30,13 @@ html(lang="en")
             i.fa-regular.fa-moon
           div.button.button--link
             a.fa-brands.fa-github(href="https://github.com/sanchezdev-1906", target="_blank")
-    img(src="./assets/img/shape-1.svg", alt="shape").shape-1
+    main.main 
+      .hero
+        h1.hero__text Joel Sanchez 
+          br
+          span.text-cyan Desarrollador 
+          br
+          span.text-red Frontend
+        img(src="./assets/logo/logo-small.svg", alt="sanchez dev logo").hero__img
+        
   script(src="main.js") 

@@ -23,6 +23,17 @@ body
   font-size: 16px;
   line-height: 24px;
 }
+img
+{
+  display: block;
+  max-width: 100%;
+}
+main
+{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 80ch;
+}
 
 @media screen and (min-width:700px){
   body

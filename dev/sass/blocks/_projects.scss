@@ -1,0 +1,72 @@
+.projects
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .cards-container
+  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-auto-rows: 200px;
+    gap: 1rem;
+  }
+  .card
+  {
+    display: grid;
+    grid-template-rows: 40% 1fr;
+
+    background-color: $color-dark--90;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px $box-shadow;
+    &__text
+    {
+      height: 100%;
+      display: grid;
+      grid-template-rows: 1fr max-content;
+      padding: .5rem;
+
+    }
+    &__title
+    {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    &__links
+    {
+      display: flex;
+      justify-content: start;
+      gap: .5rem;
+      .button
+      {
+        box-shadow: 0 2px 5px $box-shadow;
+      }
+    }
+    &__header
+    {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      .layer
+      {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 1rem 0 0;
+        background-color: rgba(0, 242, 255, 0.2);
+      }
+      .icon
+      {
+        position: absolute;
+        z-index: 20;
+        font-size: 3rem;
+        top: .5rem;
+        right: .5rem;
+        transform: rotate(30deg);
+        color: rgb(0, 238, 255);
+      }
+    }
+  }
+}

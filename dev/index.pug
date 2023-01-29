@@ -5,5 +5,29 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="style.css")
+    script(src="https://kit.fontawesome.com/e8f815e43c.js" crossorigin="anonymous")
     title Sanchez Dev - Frontend Developer
-  body 
+  body
+    header.menu
+      a(href="https://sanchezdev-1906.github.io") 
+        img(src="./assets/logo/logo-big.svg", alt="sanchez dev logo").menu__logo
+      div.button.button--toggle#menuToggle
+        i.fa-solid.fa-bars
+      nav.menu__links#menuNav
+        .button.button--close#menuClose 
+          i.fa-solid.fa-xmark
+        ul
+          li 
+            a(href="#skills") Mis Habilidades 
+          li 
+            a(href="#project") Mis Proyectos
+          li 
+            a(href="#contact") Contactame
+        div.buttons
+          div.button.button--theme
+            i.fa-regular.fa-moon
+          div.button.button--link
+            a.fa-brands.fa-github(href="https://github.com/sanchezdev-1906", target="_blank")
+    img(src="./assets/img/shape-1.svg", alt="shape").shape-1
+  script(src="main.js") 

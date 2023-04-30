@@ -8,8 +8,7 @@
   },
   "scripts": {
     "pug": "pug --watch dev/index.pug -o docs/",
-    "sass": "sass --watch dev/sass/style.scss docs/style.css",
-    "minify": "minify docs/style.css > docs/style.min.css"
+    "sass": "sass --watch dev/sass/style.scss docs/style.css --style=compressed"
   },
   "repository": {
     "type": "git",

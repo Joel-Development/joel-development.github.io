@@ -8,7 +8,7 @@
   scroll-padding-top: 75px;
 }
 
-:root
+body
 {
   --bg-100: #{$color-dark--100};
   --bg-90: #{$color-dark--90};
@@ -19,7 +19,7 @@
   --bg-transparent: #{$color-dark-transparent};
   --cl-transparent: #{$color-light-transparent};
 }
-:root.light
+body.light
 {
   --bg-100: #{$color-light--100};
   --bg-90: #{$color-light--90};
@@ -61,6 +61,7 @@ body
   background-color: var(--bg-100);
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
 }
 img

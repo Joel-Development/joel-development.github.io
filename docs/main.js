@@ -3,6 +3,7 @@ const buttonClose = document.getElementById("menuClose")
 const menuNav = document.getElementById("menuNav")
 const cardsContainer = document.getElementById("cards-container")
 const skillsContainer = document.getElementById("skills-container")
+const themeButton = document.getElementById("theme-button")
 
 buttonToggle.addEventListener('click',()=>
 {menuNav.classList.add('visible')})
@@ -93,4 +94,17 @@ async function getTechnologyData() {
 addEventListener("load", () => {
   renderCards();
   renderTechnologies();
+})
+
+themeButton.addEventListener("click", () => {
+  if (themeButton.children[0].classList.contains("fa-moon")) {
+    document.body.classList.add("light");
+    themeButton.children[0].classList.remove("fa-moon");
+    themeButton.children[0].classList.add("fa-sun");
+  }else {
+    document.body.classList.remove("light");
+    themeButton.children[0].classList.remove("fa-sun");
+    themeButton.children[0].classList.add("fa-moon");
+  }
+
 })

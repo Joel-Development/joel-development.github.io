@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   cursor: default;
-  background-color: var(--bg-90);
+  background-color: var(--bg-100);
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 2px 5px $box-shadow;
@@ -40,8 +40,9 @@
     top: 0;
     left: 0;
 
+    font-weight: 500;
     opacity: 0;
-    background-color: var(--bg-80);
+    background-color: var(--bg-90);
     transition: opacity .2s;
   }
   &:hover &__name

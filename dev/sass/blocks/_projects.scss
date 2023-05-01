@@ -16,7 +16,7 @@
     display: grid;
     grid-template-rows: 1fr max-content;
 
-    background-color: $color-dark--90;
+    background-color: var(--bg-90);
     border-radius: 1rem;
     box-shadow: 0 2px 5px $box-shadow;
     &__text

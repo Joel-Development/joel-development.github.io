@@ -12,7 +12,7 @@
       display: block;
       text-decoration: none;
       padding-bottom: 0.5rem;
-      color: $color-light--100;
+      color: var(--cl-100);
     }
     .link:last-child
     {
@@ -28,8 +28,8 @@
       &:hover
       {
         color: $color-primary;
-        -webkit-text-shadow: $color-dark-transparent;
-        text-shadow: 0 0 5px $color-dark-transparent;
+        -webkit-text-shadow: var(--bg-transparent);
+        text-shadow: 0 0 5px var(--bg-transparent);
       }
     }
   }

@@ -12,7 +12,7 @@
   height: 75px;
   padding: 1rem;
 
-  background-color: $color-dark-transparent;
+  background-color: var(--bg-transparent);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -31,11 +31,11 @@
   padding-top: 3rem;
   
   text-align: center;
-  background-color: $color-dark-transparent;
+  background-color: var(--bg-transparent);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
-  transition: transform .2s cubic-bezier(0.39,0.57,0.56,1);;
+  transition: transform .2s cubic-bezier(0.39,0.57,0.56,1);
   transform: translateY(-100%);
   
   &.visible
@@ -52,7 +52,7 @@
   & ul li a
   {
     text-decoration: none;
-    color: $color-light--100;
+    color: var(--cl-100);
     transition: .2s color;
   }
   & ul li a:hover

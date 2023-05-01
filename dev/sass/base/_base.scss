@@ -7,6 +7,41 @@
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
+
+:root
+{
+  --bg-100: #{$color-dark--100};
+  --bg-90: #{$color-dark--90};
+  --bg-80: #{$color-dark--80};
+  --cl-100: #{$color-light--100};
+  --cl-90: #{$color-light--90};
+  --cl-80: #{$color-light--80};
+  --bg-transparent: #{$color-dark-transparent};
+  --cl-transparent: #{$color-light-transparent};
+}
+:root.light
+{
+  --bg-100: #{$color-light--100};
+  --bg-90: #{$color-light--90};
+  --bg-80: #{$color-light--80};
+  --cl-100: #{$color-dark--100};
+  --cl-90: #{$color-dark--90};
+  --cl-80: #{$color-dark--80};
+  --bg-transparent: #{$color-light-transparent};
+  --cl-transparent: #{$color-dark-transparent};
+}
+
+:root::-webkit-scrollbar
+{
+  background-color: var(--bg-90);
+  width: .75em;
+}
+:root::-webkit-scrollbar-thumb
+{
+  background-color: var(--bg-80);
+  border-radius: 100vmax;
+}
+
 body,
 html
 {
@@ -22,8 +57,8 @@ body
 {
   position: relative;
   min-height: 100vh;
-  color: $color-light--100;
-  background-color: $color-dark--100;
+  color: var(--cl-100);
+  background-color: var(--bg-100);
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;

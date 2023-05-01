@@ -1,7 +1,8 @@
 const buttonToggle = document.getElementById("menuToggle")
 const buttonClose = document.getElementById("menuClose")
 const menuNav = document.getElementById("menuNav")
-const cardContainer = document.getElementById("cards-container")
+const cardsContainer = document.getElementById("cards-container")
+const skillsContainer = document.getElementById("skills-container")
 
 buttonToggle.addEventListener('click',()=>
 {menuNav.classList.add('visible')})
@@ -52,18 +53,44 @@ async function renderCards(){
           cardLinks.append(github);
         cardContent.append(cardLinks);        
 
-    cardContainer.append(cardDiv);
+    cardsContainer.append(cardDiv);
   });
 
+}
+
+async function renderTechnologies() {
+  let data = await getTechnologyData();
+
+  data.forEach(item=>{
+    const skillDiv = document.createElement("div");
+    skillDiv.classList.add("skill");
+      const skillImg = document.createElement("img");
+      skillImg.classList.add("skill__img");
+      skillImg.setAttribute("src", item.url);
+      skillImg.setAttribute("alt", item.name);
+      skillDiv.append(skillImg);
+
+      const skillName = document.createElement("p");
+      skillName.classList.add("skill__name");
+      skillName.textContent = item.name;
+      skillDiv.append(skillName);
+    skillsContainer.append(skillDiv);
+    })
 }
 
 async function getCardData(){
   const cardResponse = await fetch("/docs/json/projects.json");
   const cardJson = await cardResponse.json();
-  const cardData = cardJson; 
-  return cardData;
+  return cardJson;
+}
+
+async function getTechnologyData() {
+  const cardResponse = await fetch("/docs/json/tech-icons.json");
+  const cardJson = await cardResponse.json();
+  return cardJson;
 }
 
 addEventListener("load", () => {
   renderCards();
+  renderTechnologies();
 })

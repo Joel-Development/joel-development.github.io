@@ -80,13 +80,13 @@ async function renderTechnologies() {
 }
 
 async function getCardData(){
-  const cardResponse = await fetch("/docs/json/projects.json");
+  const cardResponse = await fetch("./json/projects.json");
   const cardJson = await cardResponse.json();
   return cardJson;
 }
 
 async function getTechnologyData() {
-  const cardResponse = await fetch("/docs/json/tech-icons.json");
+  const cardResponse = await fetch("./json/tech-icons.json");
   const cardJson = await cardResponse.json();
   return cardJson;
 }

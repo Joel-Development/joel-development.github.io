@@ -38,5 +38,9 @@
   {
     "name": "VSCode",
     "url": "./assets/technologies/vscode.svg"
+  },
+  {
+    "name": "TypeScript",
+    "url": "./assets/technologies/typescript.svg"
   }
 ]
